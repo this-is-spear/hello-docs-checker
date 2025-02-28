@@ -26,4 +26,4 @@ jobs:
       - name: Redocly CLI Test
         uses: fluximus-prime/redocly-cli-github-action@v1
         with:
-          args: 'docs test/openapi.json'
+          args: 'build-docs docs/test/openapi.json'
