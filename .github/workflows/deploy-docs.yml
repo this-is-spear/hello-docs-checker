@@ -32,6 +32,6 @@ jobs:
         uses: leigholiver/commit-with-deploy-key@v1.0.4
         with:
           source: openapi.html
-          destination_folder: html/test/openapi.html
+          destination_folder: html/test
           destination_repo: this-is-spear/hello-docs-checker
           deploy_key: ${{ secrets.DEP_KEY }}
