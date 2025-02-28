@@ -23,15 +23,18 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      # see https://github.com/marketplace/actions/redocly-cli-github-action
       - name: Redocly CLI Test
         uses: fluximus-prime/redocly-cli-github-action@v1
         with:
           args: 'build-docs docs/test/openapi.json -o openapi.html'
 
+      # see https://github.com/marketplace/actions/commit-with-deploy-key
       - name: 🚀 Deploy Docs
         uses: leigholiver/commit-with-deploy-key@v1.0.4
         with:
           source: openapi.html
           destination_folder: html/test
           destination_repo: this-is-spear/hello-docs-checker
+          destination_branch: docs
           deploy_key: ${{ secrets.DEP_KEY }}
