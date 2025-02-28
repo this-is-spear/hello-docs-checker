@@ -43,5 +43,4 @@ jobs:
           destination_folder: html/test
           destination_repo: this-is-spear/hello-docs-checker
           destination_branch: docs
-          delete_destination: true
           deploy_key: ${{ secrets.DEP_KEY }}
