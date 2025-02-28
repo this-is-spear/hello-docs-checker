@@ -9,15 +9,8 @@ name: 🌧️ Continuous Integration
 
 on:
   push:
-    branches-ignore:
-      - develop
-      - main
-      - test
-  pull_request:
     branches:
-      - develop
       - main
-      - test
 
 permissions:
   contents: read
