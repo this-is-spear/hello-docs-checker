@@ -26,12 +26,12 @@ jobs:
       - name: Redocly CLI Test
         uses: fluximus-prime/redocly-cli-github-action@v1
         with:
-          args: 'build-docs docs/test/openapi.json -o docs/test/openapi.html'
+          args: 'build-docs docs/test/openapi.json -o openapi.html'
 
       - name: 🚀 Deploy Docs
         uses: leigholiver/commit-with-deploy-key@v1.0.4
         with:
-          source: docs/test/openapi.html
+          source: openapi.html
           destination_folder: html/test/openapi.html
           destination_repo: this-is-spear/hello-docs-checker
           deploy_key: ${{ secrets.PERSONAL_TOKEN }}
