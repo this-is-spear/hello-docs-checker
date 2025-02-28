@@ -9,4 +9,9 @@ class HelloController {
     fun hello(): String {
         return "Hello, world!"
     }
+
+    @GetMapping("/v2/hello")
+    fun hello2(): String {
+        return "Hello, developer!"
+    }
 }

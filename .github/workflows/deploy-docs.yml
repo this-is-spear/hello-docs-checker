@@ -24,10 +24,16 @@ jobs:
         uses: actions/checkout@v4
 
       # see https://github.com/marketplace/actions/redocly-cli-github-action
-      - name: Redocly CLI Test
+      - name: Redocly CLI Build docs
         uses: fluximus-prime/redocly-cli-github-action@v1
         with:
-          args: 'build-docs docs/test/openapi.json -o openapi.html'
+          args: 'join docs/test/hello-v1.json docs/test/hello-v2.json -o openapi.json'
+
+      # see https://github.com/marketplace/actions/redocly-cli-github-action
+      - name: Redocly CLI Build docs
+        uses: fluximus-prime/redocly-cli-github-action@v1
+        with:
+          args: 'build-docs openapi.json -o openapi.html'
 
       # see https://github.com/marketplace/actions/commit-with-deploy-key
       - name: 🚀 Deploy Docs
