@@ -34,4 +34,4 @@ jobs:
           source: openapi.html
           destination_folder: html/test/openapi.html
           destination_repo: this-is-spear/hello-docs-checker
-          deploy_key: ${{ secrets.DEPLOY_KEY }}
+          deploy_key: ${{ secrets.DEP_KEY }}
