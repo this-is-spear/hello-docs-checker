@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RestController
 @RequestMapping("/v1")
 class V1ByeController {
     @GetMapping("/bye")
-    fun hello2(): String {
+    fun bye1(): String {
         return "Bye, developer!"
     }
 }

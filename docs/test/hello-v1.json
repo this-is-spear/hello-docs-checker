@@ -16,7 +16,7 @@
         "tags": [
           "v-1-hello-controller"
         ],
-        "operationId": "hello",
+        "operationId": "hello1",
         "responses": {
           "200": {
             "description": "OK",
