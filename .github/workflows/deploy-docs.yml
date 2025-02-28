@@ -24,7 +24,7 @@ jobs:
         uses: actions/checkout@v4
 
       # see https://github.com/marketplace/actions/redocly-cli-github-action
-      - name: Redocly CLI Build docs
+      - name: Redocly CLI json file join
         uses: fluximus-prime/redocly-cli-github-action@v1
         with:
           args: 'join docs/test/hello-v1.json docs/test/hello-v2.json -o openapi.json'

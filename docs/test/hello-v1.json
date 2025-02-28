@@ -14,7 +14,7 @@
     "/v1/hello": {
       "get": {
         "tags": [
-          "hello-controller"
+          "v-1-hello-controller"
         ],
         "operationId": "hello",
         "responses": {

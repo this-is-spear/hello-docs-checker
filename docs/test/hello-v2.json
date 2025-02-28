@@ -11,12 +11,12 @@
     }
   ],
   "paths": {
-    "/v1/bye": {
+    "/v2/hello": {
       "get": {
         "tags": [
-          "bye-controller"
+          "v-2-hello-controller"
         ],
-        "operationId": "hello2",
+        "operationId": "hello",
         "responses": {
           "200": {
             "description": "OK",
@@ -31,12 +31,12 @@
         }
       }
     },
-    "/2/hello": {
+    "/v1/bye": {
       "get": {
         "tags": [
-          "hello-controller"
+          "v-1-bye-controller"
         ],
-        "operationId": "hello",
+        "operationId": "hello2",
         "responses": {
           "200": {
             "description": "OK",
